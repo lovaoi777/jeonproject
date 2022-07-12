@@ -1,0 +1,93 @@
+*{
+    margin: 0px;   
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../image/images.jpg); 
+}
+.ct_header h2 a{
+    position: absolute;
+    top:2%;
+    left:2%;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+
+}
+.main{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+.main .main_start{
+    font-size:8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.main button{
+    margin-top: 30px;
+    background: none;
+    border:2px solid darkgray;
+    font-size: 50px;
+    border-radius: 20px;
+    color: white;
+    padding : 15px 20px;
+    outline: none;
+    cursor: pointer;
+    transition : all .4s;
+}
+.main button:hover{
+    background-color: darkblue;
+}
+.log_{
+    display: none;
+}
+#start{
+    position: relative;
+    display: inline-block;
+}
+#start::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+}
+#start.active::after{
+    display: none;
+}
+.log_id input{
+    color: white;
+    background: none;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    width: 600px;
+    height: 80px;
+    font-size: 30px;
+}
+.log_password input{
+    color: white;
+    background: none;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    width: 600px;
+    height: 80px;
+    font-size: 30px;
+}
+.container .nav ul li{
+    display: inline-block;
+    color: white;
+    margin: 0 10px;
+}
+.container .nav a{
+    text-decoration: none;
+}
